@@ -1,7 +1,12 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
+import { StatusBar } from 'react-native';
 import Routes from './routes';
 
 export default function App() {
-  return <Routes />;
+  return (
+    <Fragment>
+      <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
+      <Routes />
+    </Fragment>
+  );
 }
