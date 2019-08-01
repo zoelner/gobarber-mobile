@@ -7,7 +7,7 @@ import Appointment from '~/components/Appointment';
 
 import { Container, Title, List } from './styles';
 
-export default function Dashboard() {
+function Dashboard() {
   const [appointments, setappointments] = useState([]);
 
   useEffect(() => {
@@ -58,3 +58,5 @@ Dashboard.navigationOptions = {
     <Icon name="event" size={20} color={tintColor} />
   ),
 };
+
+export default Dashboard;

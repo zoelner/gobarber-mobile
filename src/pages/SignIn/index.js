@@ -16,7 +16,7 @@ import {
   SignLinkText,
 } from './styles';
 
-export default function SignIn({ navigation }) {
+function SignIn({ navigation }) {
   const dispatch = useDispatch();
   const passwordRef = useRef();
 
@@ -68,3 +68,5 @@ export default function SignIn({ navigation }) {
     </Background>
   );
 }
+
+export default SignIn;
